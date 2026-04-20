@@ -12,9 +12,15 @@ __pycache__/
 .RData
 *-Ex.R
 *.tar.gz
+*.zip
 *.Rcheck/
 .DS_Store
 .Rproj.user/
 *.log
 outputs/models/*.rds
 outputs/models/*.pkl
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+scratch/

@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash('/mnt/c/Program Files/R/R-4.4.2/bin/x64/Rscript.exe' scripts/03_model_binary.R)",
+      "Bash($RSCRIPT *)",
+      "Bash('/mnt/c/Program Files/R/R-4.4.2/bin/x64/Rscript.exe' scripts/04_model_duration.R)",
+      "Bash('/mnt/c/Program Files/R/R-4.4.2/bin/x64/Rscript.exe' scripts/05_evaluate_predictions.R)",
+      "Bash(grep -v \"^Warning\\\\|^package\\\\|^The follow\\\\|^  \\\\|^$\\\\|Attaching\\\\|masked\\\\|date, inter\")",
+      "Bash(grep -v \"^Warning\\\\|^package\\\\|^The follow\\\\|^  \\\\|^$\\\\|Attaching\\\\|masked\\\\|date, inter\\\\|citation\")",
+      "Bash('/mnt/c/Program Files/R/R-4.4.2/bin/x64/Rscript.exe' scripts/06_partial_effects.R)",
+      "Bash('/mnt/c/Program Files/R/R-4.4.2/bin/x64/Rscript.exe' -e ' *)",
+      "Bash(grep -v \"^Warning\\\\|^package\\\\|^The follow\\\\|^  \\\\|^$\\\\|Attaching\\\\|masked\\\\|date, inter\\\\|nlme\")",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s http://localhost:7777)",
+      "Read(//tmp/**)",
+      "Bash('/mnt/c/Program Files/R/R-4.4.2/bin/x64/Rscript.exe' -e 'setwd\\('\\\\''C:/Users/simon/OneDrive/Desktop/Y2S2/Stat modeling/Project'\\\\''\\); source\\('\\\\''scripts/08_combined_effects.R'\\\\''\\)')",
+      "Bash(grep -v \"^Warning\\\\|^package\\\\|^The follow\\\\|Attaching\\\\|masked\\\\|date,\\\\|nlme\\\\|collapse\\\\|filter\\\\|intersect\\\\|^$\")",
+      "Bash('/mnt/c/Program Files/R/R-4.4.2/bin/x64/Rscript.exe' -e 'setwd\\('\\\\''C:/Users/simon/OneDrive/Desktop/Y2S2/Stat modeling/Project'\\\\''\\); source\\('\\\\''scripts/09_actuarial_pricing.R'\\\\''\\)')"
+    ]
+  }
+}

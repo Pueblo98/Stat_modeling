@@ -6,12 +6,13 @@
 **Source:** [BTS Marketing Carrier On-Time Performance](https://www.transtats.bts.gov/)
 **Format:** CSV
 **Variables of Interest:**
-- `FL_DATE`: Flight Date
-- `ORIGIN` / `DEST`: Airport Codes (e.g., ORD, ATL, DFW)
-- `DEP_DEL15`, `ARR_DEL15`: Cancellation & Delay indicators (Binary)
-- `DEP_DELAY`, `ARR_DELAY`: Continuous delay duration in minutes
-- `CRS_DEP_TIME`: Planned departure time
-- `WEATHER_DELAY`: Known delay directly attributed to weather
+- `FlightDate`: Flight Date
+- `Origin` / `Dest`: Airport Codes (e.g., ORD, ATL, DFW)
+- `DepDel15`, `ArrDel15`: Delay indicators (Binary)
+- `Cancelled`: Cancellation indicator (Binary)
+- `DepDelay`, `ArrDelay`: Continuous delay duration in minutes
+- `CRSDepTime`: Planned departure time
+- `WeatherDelay`: Known delay directly attributed to weather
 
 ### B. Weather Data (METAR)
 **Source:** [Iowa State University ASOS/AWOS Network](https://mesonet.agron.iastate.edu/request/download.phtml) or `riem` R package.
@@ -20,8 +21,8 @@
 - `tmpf`: Air temperature (Fahrenheit)
 - `p01i`: Precipitation in the last hour
 - `sknt`: Wind speed in knots
-- `vby`: Visibility
-- `presentwx`: Weather codes (for extracting thunderstorms: `TS` or `TSRA`)
+- `vsby`: Visibility
+- `wxcodes`: Weather codes (for extracting thunderstorms: `TS` or `TSRA`)
 
 ## 2. Selection Scope
 Given the scale of the BTS data, we will initially scope the analysis for feasibility:
