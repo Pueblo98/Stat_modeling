@@ -12,6 +12,7 @@ __pycache__/
 .RData
 *-Ex.R
 *.tar.gz
+*.zip
 *.Rcheck/
 .DS_Store
 .Rproj.user/
@@ -19,3 +20,8 @@ __pycache__/
 outputs/models/*.rds
 outputs/models/*.pkl
 flights_clean.rds
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+scratch/
