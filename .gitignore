@@ -19,6 +19,7 @@ __pycache__/
 *.log
 outputs/models/*.rds
 outputs/models/*.pkl
+flights_clean.rds
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
